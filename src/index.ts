@@ -223,10 +223,8 @@ function busboyExpress(mwOptions?: Options) {
     }
   };
 }
-export { busboyExpress };
-export default busboyExpress;
 
-export async function cleanup(req: Request) {
+async function cleanup(req: Request) {
   if (req.files) {
     try {
       await Promise.all(
@@ -249,3 +247,8 @@ export async function cleanup(req: Request) {
     }
   }
 }
+
+busboyExpress.cleanup = cleanup;
+
+export default busboyExpress;
+export { cleanup, busboyExpress, busboyExpress as busboy };

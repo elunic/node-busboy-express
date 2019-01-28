@@ -4,6 +4,8 @@
 
 An express middleware for `busboy`, with TypeScript typings.
 
+Works with ES5 if you include a global `Promise` library.
+
 ## Usage
 
 **Note**: if you get errors about incompatible definitions of `Express.Request.files`, enable the `skipLibCheck` TypeScript compiler option.

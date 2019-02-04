@@ -10,6 +10,7 @@
   "license": "MIT",
   "scripts": {
     "test": "npm run clean && npm run compile && npx jasmine 'dist/test/**/*.spec.js'",
+    "posttest": "npm run check",
     "test:watch": "npm run clean && npx tsc-watch --onSuccess \"npx jasmine 'dist/test/**/*.spec.js'\" --preserveWatchOutput -w --noEmitOnError false",
     "check": "tslint -p . && npx prettier --config ./.prettierrc --check 'src/**/*.ts' 'test/**/*.ts'",
     "clean": "npx shx rm -rf dist/",

@@ -1,6 +1,6 @@
 {
   "name": "busboy-express",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "A configurable express middleware for busboy, with TypeScript typings.",
   "main": "dist/src/index.js",
   "typings": "dist/src/index.d.ts",
